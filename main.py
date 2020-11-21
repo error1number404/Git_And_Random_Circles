@@ -9,6 +9,7 @@ import random
 class MyWidget(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
+        self.setupUi(self)
         self.paint = False
         self.pushButton.clicked.connect(self.do)
 
